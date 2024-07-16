@@ -5,6 +5,7 @@ html {
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -42,7 +43,11 @@ body {
 /* Start Header */
 
 #header {
-    background-color: #333333;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 #header .container {
@@ -89,7 +94,7 @@ body {
     box-shadow: 0 0 10px gray;
     position: absolute;
     right: -15px;
-    top: 12px;
+    top: 30px;
     display: none;
 }
 
@@ -120,6 +125,60 @@ body {
     display: block;
 }
 
-
-
 /* End Header */
+
+/* Start Landing */
+
+#landingDiv {
+    background-image: url("images/coding.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#landingDiv .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#landingDiv .container .centerDiv h1 {
+    font-size: 80px;
+    color: white;
+}
+
+#landingDiv .container .centerDiv p {
+    font-size: 35px;
+    color: white;
+    margin: 40px 0;
+}
+
+#landingDiv .container .centerDiv button {
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+}
+
+#landingDiv .container .centerDiv button:hover {
+    cursor: pointer;
+    background-color: #ba4e3a;
+}
+
+#landingDiv .container .centerDiv {
+    text-align: center;
+    position: relative;
+}
+
+#landingDiv::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.4;
+}
+
+/* End Landing */
