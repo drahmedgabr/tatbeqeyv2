@@ -187,3 +187,44 @@ body {
 }
 
 /* End Landing */
+
+/* Start Service */
+
+#servicesDiv {
+    padding: 100px 0;
+}
+
+#servicesDiv .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#servicesDiv .container .service {
+   width: 300px;
+   text-align: center;
+   margin: 10px;
+}
+
+#servicesDiv .container .service i {
+    font-size: 60px;
+    color: var(--secondary-color);
+}
+
+#servicesDiv .container .service h3 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+#servicesDiv .container .service p {
+    font-size: 25px;
+    color: #777;
+}
+
+@media (max-width: 680px) {
+    #servicesDiv .container .service {
+        margin-bottom: 50px;
+    }
+}
+
+/* End Services */
