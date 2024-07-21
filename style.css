@@ -86,6 +86,7 @@ body {
 }
 
 #header .container .menuDiv ul {
+    width: 200px;
     background-color: white;
     font-size: 20px;
     list-style: none;
@@ -123,6 +124,10 @@ body {
 
 #header .menuDiv:hover ul {
     display: block;
+}
+
+#header .container .menuDiv ul li:hover {
+    padding-left: 45px;
 }
 
 /* End Header */
